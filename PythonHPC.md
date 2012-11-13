@@ -5,7 +5,7 @@
 # Topics
 
 * Trivially parallel tasks: IPython parallel
-* Fully parallel software: HDF5 and PyTrilinos
+* Fully parallel software: PyTrilinos
 
 # Trivially parallel tasks with IPython parallel
 
@@ -13,7 +13,7 @@
 
 * Submit function+arguments to a queue (managed by the `controller`) consumed by workers (engines)
 * function is *serial*, no IPython-specific, easy debugging
-* works the same in serial, locally on multi-core, or on large cluster
+* same function work serially, locally on multi-core, or on large cluster
 
 # IPython parallel: Local example
 
@@ -55,3 +55,25 @@ Both subclass numpy arrays
 `pytrilinos.ipynb`
 
 export pytrilinos.py and run with mpirun -n 3 python pytrilinos.py
+
+# Usage in Planck
+
+Parallel MapMaking software, ~1TB of timelines to a sky map
+
+Same MPI performance of highly optimized Fortran code tailored to the task
+
+# Parallel I/O
+
+Currently main missing feature in Python for HPC is support for Parallel I/O (`mpi4py` binary is not portable)
+
+Best option would be HDF5: C and F90 libraries supported on XSEDE/NERSC clusters for Lustre and GPFS filesystems
+
+Currently `h5py` and `pytables` do not support parallel HDF5
+
+I have a C module (+cython) custom working module written for my datasets, to be generalized
+
+# Performance at NERSC
+
+![HDF5 parallel](stripe_io.png)
+
+    
