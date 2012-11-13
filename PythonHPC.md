@@ -6,6 +6,7 @@
 
 * Trivially parallel tasks: IPython parallel
 * Fully parallel software: PyTrilinos
+* Available on [github.com/zonca/PythonHPC](http://github.com/zonca/PythonHPC)
 
 # Trivially parallel tasks with IPython parallel
 
