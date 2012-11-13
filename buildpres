@@ -1,0 +1,1 @@
+pandoc --self-contained --webtex -i -t s5 PythonHPC.md -o PythonHPC.html
