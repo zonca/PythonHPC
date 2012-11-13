@@ -8,5 +8,7 @@ see the slides:
 ipython notebooks:
 
 * `ipythonparallel.ipynb` ipython parallel example, you fist need to run:
+
     ipycluster start --n=4
+
 * `pytrilinos.ipynb` pytrilinos example
