@@ -7,8 +7,10 @@ see the slides:
 
 ipython notebooks:
 
-* `ipythonparallel.ipynb` ipython parallel example, you fist need to run:
+* `ipythonparallel.ipynb` ipython parallel example, you fist need to run from a console in the same folder:
 
+```bash
     ipycluster start --n=4
+```
 
 * `pytrilinos.ipynb` pytrilinos example
