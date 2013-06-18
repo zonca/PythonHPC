@@ -3,7 +3,7 @@ PythonHPC
 
 see the slides:
 
-[Python for HPC, html slides](http://htmlpreview.github.com/?https://github.com/zonca/PythonHPC/blob/master/PythonHPC.html)
+[Python for HPC, html slides](http://htmlpreview.github.io/?https://github.com/zonca/PythonHPC/blob/master/PythonHPC.html)
 
 Clone or download the repository and run:
 
